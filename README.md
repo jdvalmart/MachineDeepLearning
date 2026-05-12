@@ -1,7 +1,7 @@
 # 🤖 Machine Deep Learning — Portafolio de IA
 
 Repositorio de aprendizaje del Bootcamp de Inteligencia Artificial
-(Talento Tech Valle / Universidad Libre) — Niveles Básico e Intermedio.
+(MINTIC / Talento Tech Valle / Universidad Libre) — Niveles Básico e Intermedio.
 
 ---
 
@@ -162,5 +162,5 @@ pip install tensorflow[and-cuda]
 
 **Juan David Valencia Martínez**
 - Ingeniero de Software Fullstack / AI Engineer
-- Palmira, Valle del Cauca, Colombia
+- Colombia
 - GitHub: [@jdvalmart](https://github.com/jdvalmart)
