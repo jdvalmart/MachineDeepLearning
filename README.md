@@ -7,21 +7,62 @@ Repositorio de aprendizaje del Bootcamp de Inteligencia Artificial
 
 ## ⚡ Inicio rápido
 
+### Requisitos previos
+
+- **Python 3.10** o superior (desarrollado con 3.10.12)
+- **Git** instalado
+- **pip** actualizado: `pip install --upgrade pip`
+- 5 GB de espacio libre (TensorFlow + PyTorch son pesados)
+
+### Instalación paso a paso
+
 ```bash
 # 1. Clonar el repositorio
 git clone https://github.com/jdvalmart/MachineDeepLearning.git
 cd MachineDeepLearning
 
-# 2. Crear y activar el entorno virtual
+# 2. Crear entorno virtual
 python3 -m venv venv_tf
-source venv_tf/bin/activate   # Linux/Mac
-# venv_tf\Scripts\activate    # Windows
+source venv_tf/bin/activate        # Linux / macOS
+# venv_tf\Scripts\activate         # Windows (PowerShell)
+# venv_tf\Scripts\activate.bat     # Windows (CMD)
 
-# 3. Instalar dependencias
+# 3. Instalar dependencias (~15 min la primera vez)
+pip install --upgrade pip
 pip install -r requirements.txt
 
-# 4. Abrir Jupyter
+# 4. Registrar el kernel en Jupyter (opcional, para VS Code)
+python -m ipykernel install --user --name=venv_tf --display-name="Python 3.10 (venv_tf)"
+
+# 5. Abrir Jupyter
 jupyter notebook
+```
+
+### Abrir un laboratorio específico
+
+```bash
+# Desde la raíz del proyecto, con el venv activado:
+jupyter notebook nivel_intermedio/Laboratorio_5_Redes_neuronales_convolucionales.ipynb
+```
+
+### Solución de problemas comunes
+
+| Problema | Solución |
+|----------|----------|
+| `ModuleNotFoundError: No module named 'tensorflow'` | El venv no está activado. Ejecuta `source venv_tf/bin/activate` |
+| Jupyter no encuentra el kernel | Instálalo manualmente con el paso 4 de arriba |
+| Error de memoria con TensorFlow | Se usa solo CPU. Cierra otras aplicaciones pesadas |
+| `CUDA error` o warnings de GPU | Ignorar — TensorFlow corre en CPU, los warnings son inofensivos |
+| El notebook se ve sin outputs | Es normal — los outputs se limpiaron para mantener el repo ligero. Ejecuta las celdas para regenerarlos |
+
+### Nota sobre GPU
+
+Este proyecto está configurado para **CPU solamente**. Si tienes GPU NVIDIA y quieres acelerar
+TensorFlow, instala en su lugar:
+
+```bash
+pip uninstall tensorflow
+pip install tensorflow[and-cuda]
 ```
 
 ---
