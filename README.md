@@ -18,8 +18,8 @@ Repositorio de aprendizaje del Bootcamp de Inteligencia Artificial
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/jdvalmart/MachineDeepLearning.git
-cd MachineDeepLearning
+git clone https://github.com/jdvalmart/bootcamp-ia-mintic.git
+cd bootcamp-ia-mintic
 
 # 2. Crear entorno virtual
 python3 -m venv venv_tf
