@@ -93,9 +93,9 @@ jupyter notebook
 
 | # | Tema | Archivo/Carpeta |
 |---|------|-----------------|
-| 01 | Entregable inicial | `nivel_intermedio/Entregable_1.ipynb` |
-| 05 | Bases de datos SQL y NoSQL | `nivel_intermedio/Entregable_5/` |
-| 06 | Aplicación de herramientas XAI (CNN + Flask) | `nivel_intermedio/app_flask.py` |
+| 01 | Entregable inicial | `entregables/Entregable_1/` |
+| 05 | Bases de datos SQL y NoSQL | `entregables/Entregable_5/` |
+| 06 | Aplicación de herramientas XAI (CNN + Flask) | `entregables/Entregable_6/` |
 
 ---
 
