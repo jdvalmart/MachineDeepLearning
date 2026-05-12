@@ -5,3 +5,15 @@ __pycache__/
 venv_tf/
 *.egg-info/
 .vscode/
+
+# Modelos entrenados (binarios grandes)
+*.h5
+
+# Caché de datasets (scikit-learn, etc.)
+scikit_learn_data/
+
+# Bases de datos generadas
+*.db
+
+# Artefactos de Windows
+*Zone.Identifier
