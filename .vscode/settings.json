@@ -1,0 +1,6 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/venv_tf/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "jupyter.jupyterServerType": "local",
+    "notebook.defaultKernel": "Python 3.10 (venv_tf)"
+}
