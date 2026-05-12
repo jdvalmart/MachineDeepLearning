@@ -9,11 +9,22 @@ venv_tf/
 # Modelos entrenados (binarios grandes)
 *.h5
 
+# Gráficos generados por notebooks
+*.png
+
+# Datasets auto-descargables (MNIST, horse2zebra, etc.)
+data/
+nltk_data/
+
 # Caché de datasets (scikit-learn, etc.)
 scikit_learn_data/
+
+# Directorios de resultados temporales
+results/
 
 # Bases de datos generadas
 *.db
 
-# Artefactos de Windows
+# Artefactos de sistema
 *Zone.Identifier
+.DS_Store
