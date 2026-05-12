@@ -8,7 +8,8 @@ Cómo trabajar en este repositorio sin romper nada.
 
 ```bash
 cd ~/proyectos/bootcamp-ia-mintic
-source venv_tf/bin/activate    # ← SIEMPRE primero
+source venv_tf/bin/activate      # bash/zsh
+source venv_tf/bin/activate.fish # fish ← SIEMPRE primero
 ```
 
 Si no ves `(venv_tf)` al inicio de tu terminal, no has activado el entorno.
@@ -38,17 +39,11 @@ busca en `bootcamp-ia-mintic/datasets/` (¡no existe!) en vez de
 ```bash
 # Para labs de nivel básico
 cd ~/proyectos/bootcamp-ia-mintic/nivel_basico
-source ../venv_tf/bin/activate
-jupyter notebook
-
-# Para labs de nivel intermedio
-cd ~/proyectos/bootcamp-ia-mintic/nivel_intermedio
-source ../venv_tf/bin/activate
+source ../venv_tf/bin/activate       # bash/zsh
+source ../venv_tf/bin/activate.fish  # fish
 jupyter notebook
 ```
 
-De esta forma:
-- `pd.read_csv('datasets/archivo.csv')` → busca en `nivel_intermedio/datasets/` ✅
 - El kernel de Jupyter se llama **"Python 3.10 (venv_tf)"** — selecciónalo siempre.
 
 ---
@@ -57,7 +52,7 @@ De esta forma:
 
 ### Antes de escribir código
 
-- [ ] `source venv_tf/bin/activate` (desde la raíz del proyecto)
+- [ ] `source venv_tf/bin/activate` o `.fish` (desde la raíz del proyecto)
 - [ ] `cd nivel_basico` o `cd nivel_intermedio` (según corresponda)
 - [ ] `jupyter notebook`
 - [ ] Kernel correcto seleccionado: **Python 3.10 (venv_tf)**
@@ -119,7 +114,8 @@ docs: actualizar README con nuevo lab
 Si necesitas instalar un paquete nuevo:
 
 ```bash
-source venv_tf/bin/activate
+source venv_tf/bin/activate       # bash/zsh
+source venv_tf/bin/activate.fish  # fish
 pip install nombre-paquete
 pip freeze --local > requirements.txt   # actualiza la lista
 ```

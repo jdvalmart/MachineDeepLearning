@@ -1,4 +1,4 @@
-# 🤖 Machine Deep Learning — Portafolio de IA
+# 🤖 Bootcamp IA — MINTIC | Portafolio de Aprendizaje
 
 Repositorio de aprendizaje del Bootcamp de Inteligencia Artificial
 (MINTIC / Talento Tech Valle / Universidad Libre) — Niveles Básico e Intermedio.
@@ -23,7 +23,8 @@ cd bootcamp-ia-mintic
 
 # 2. Crear entorno virtual
 python3 -m venv venv_tf
-source venv_tf/bin/activate        # Linux / macOS
+source venv_tf/bin/activate        # Linux / macOS (bash/zsh)
+source venv_tf/bin/activate.fish   # Linux / macOS (fish)
 # venv_tf\Scripts\activate         # Windows (PowerShell)
 # venv_tf\Scripts\activate.bat     # Windows (CMD)
 
@@ -49,7 +50,7 @@ jupyter notebook nivel_intermedio/Laboratorio_5_Redes_neuronales_convolucionales
 
 | Problema | Solución |
 |----------|----------|
-| `ModuleNotFoundError: No module named 'tensorflow'` | El venv no está activado. Ejecuta `source venv_tf/bin/activate` |
+| `ModuleNotFoundError: No module named 'tensorflow'` | El venv no está activado. Ejecuta `source venv_tf/bin/activate` o `activate.fish` |
 | Jupyter no encuentra el kernel | Instálalo manualmente con el paso 4 de arriba |
 | Error de memoria con TensorFlow | Se usa solo CPU. Cierra otras aplicaciones pesadas |
 | `CUDA error` o warnings de GPU | Ignorar — TensorFlow corre en CPU, los warnings son inofensivos |
