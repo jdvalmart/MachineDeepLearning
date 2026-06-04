@@ -8,6 +8,7 @@ venv_tf/
 
 # Modelos entrenados (binarios grandes)
 *.h5
+*.pkl
 
 # Gráficos generados por notebooks
 *.png
@@ -15,6 +16,9 @@ venv_tf/
 # Datasets auto-descargables (MNIST, horse2zebra, etc.)
 data/
 nltk_data/
+
+# Datasets grandes (>100MB, no entran en GitHub)
+nivel_intermedio/datasets/Reviews.csv
 
 # Caché de datasets (scikit-learn, etc.)
 scikit_learn_data/

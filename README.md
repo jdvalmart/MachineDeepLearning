@@ -138,6 +138,7 @@ pip install tensorflow[and-cuda]
 | 01 | Entregable inicial | `entregables/Entregable_1/` |
 | 05 | Bases de datos SQL y NoSQL | `entregables/Entregable_5/` |
 | 06 | Aplicación de herramientas XAI (CNN + Flask) | `entregables/Entregable_6/` |
+| 03 | Lingüística Computacional: Sentimientos + LIME/SHAP + Monte Carlo | `entregables/Entregable_3/` |
 
 ---
 
